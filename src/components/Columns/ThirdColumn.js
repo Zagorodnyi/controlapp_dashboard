@@ -34,7 +34,7 @@ function ThirdColumn(props) {
   const [secs, setSecs] = useState("00");
 
   const onMinsChange = (event) => {
-    if (event.target.value.length < 120) {
+    if (event.target.value < 120) {
       setMins(event.target.value);
     }
     return;
