@@ -1,0 +1,82 @@
+.divider {
+  width: 80%;
+  height: 1px;
+  border: none;
+  border-bottom: solid 1px rgb(226, 226, 226);
+  box-shadow: 0px 0px 1px rgba(218, 252, 240, 0.7);
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+.dividerStatic {
+  /* width: 80%; */
+  height: 1px;
+  border: none;
+  border-bottom: solid 1px rgb(226, 226, 226);
+  box-shadow: 0px 0px 1px rgba(218, 252, 240, 0.7);
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.maxWidth {
+  width: 400px !important;
+}
+
+.button {
+  border-radius: 30px !important;
+  margin-top: 10px !important;
+  width: 60%;
+  height: 70px;
+  max-width: 200px;
+  background-color: red;
+}
+
+.row0 {
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .row0 {
+    margin-bottom: 15px;
+  }
+  .item1 {
+    margin-bottom: 15px;
+  }
+}
+
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.item1 {
+  display: flex;
+  align-items: flex-end;
+  max-width: 100px;
+}
+.item1 > span {
+  margin: 6px;
+  align-self: flex-end;
+}
+
+.item2 {
+  display: inline-flex;
+}
+.item2 button {
+  margin: 0 10px;
+}
+
+.row2 {
+  width: 100%;
+}
+
+.row2 button {
+  margin: 10px;
+}
+
+.time {
+  max-width: 30px;
+}
