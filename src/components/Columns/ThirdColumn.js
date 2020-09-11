@@ -34,13 +34,13 @@ function ThirdColumn(props) {
   const [secs, setSecs] = useState("00");
 
   const onMinsChange = (event) => {
-    if (event.target.value.length <= 5) {
+    if (event.target.value.length < 120) {
       setMins(event.target.value);
     }
     return;
   };
   const onSecsChange = (event) => {
-    if (event.target.value.length <= 5) {
+    if (event.target.value < 61) {
       setSecs(event.target.value);
     }
     return;
@@ -53,6 +53,7 @@ function ThirdColumn(props) {
           <TextField
             className={time}
             size="small"
+            type="number"
             id="Minutes"
             label="Min"
             value={mins}
@@ -62,6 +63,7 @@ function ThirdColumn(props) {
           <TextField
             size="small"
             className={time}
+            type="number"
             id="Seconds"
             label="Sec"
             value={secs}

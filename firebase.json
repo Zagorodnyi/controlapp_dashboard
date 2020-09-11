@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "public": "build",
+    "site": "control-app-remote",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
