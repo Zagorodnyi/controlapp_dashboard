@@ -16,10 +16,6 @@ import SecondColumn from "./components/Columns/SecondColumn";
 import ThidrColumn from "./components/Columns/ThirdColumn";
 
 export class App extends Component {
-  state = {
-    time: "",
-  };
-
   render() {
     return (
       <div className={classes.app}>
