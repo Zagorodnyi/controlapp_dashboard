@@ -58,7 +58,11 @@ function AddDialog(props) {
       info: {
         name: name,
         color: color,
-        data: { type: eventType, channel: channel - 1, note: note + octave },
+        data: {
+          type: eventType,
+          channel: parseInt(channel) - 1,
+          note: `${note}${octave}`,
+        },
       },
     };
     props.handleAddColumn(data, props.column);
@@ -72,9 +76,11 @@ function AddDialog(props) {
       onClose={props.handleClose}
       aria-labelledby="form-dialog-title"
     >
-      <DialogTitle id="form-dialog-title">Add Button</DialogTitle>
+      <DialogTitle style={{ textAlign: "center" }} id="form-dialog-title">
+        Add Button
+      </DialogTitle>
       <DialogContent>
-        <DialogContentText>Configure new Button</DialogContentText>
+        {/* <DialogContentText>Configure new Button</DialogContentText> */}
         <TextField
           autoFocus
           margin="dense"

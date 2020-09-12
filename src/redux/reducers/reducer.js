@@ -9,7 +9,23 @@ const InitialState = {
       info: {
         name: "Интро",
         color: "primary",
+        data: { type: "NOTE_ON", channel: 0, note: "C2" },
+      },
+    },
+    {
+      type: BUTTON,
+      info: {
+        name: "Молодежное Служение",
+        color: "primary",
         data: { type: "NOTE_ON", channel: 0, note: "C#2" },
+      },
+    },
+    {
+      type: BUTTON,
+      info: {
+        name: "Перебивка",
+        color: "primary",
+        data: { type: "NOTE_ON", channel: 0, note: "D2" },
       },
     },
     {
@@ -17,12 +33,8 @@ const InitialState = {
       info: {
         name: "Пожертвования",
         color: "secondary",
-        data: { type: "NOTE_ON", channel: 2, note: "A2" },
+        data: { type: "NOTE_ON", channel: 0, note: "D#2" },
       },
-    },
-    {
-      type: DIVIDER,
-      info: {},
     },
   ],
   column2: [
@@ -37,14 +49,6 @@ const InitialState = {
     {
       type: DIVIDER,
       info: {},
-    },
-    {
-      type: BUTTON,
-      info: {
-        name: "Стих Быт 4:38",
-        color: "default",
-        data: { type: "NOTE_ON", channel: 3, note: "E4" },
-      },
     },
   ],
 };
