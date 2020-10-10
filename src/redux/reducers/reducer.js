@@ -41,15 +41,47 @@ const InitialState = {
     {
       type: BUTTON,
       info: {
-        name: "Интро",
+        name: "Щит мой в Боге",
         color: "default",
         data: { type: "NOTE_ON", channel: 0, note: "C#2" },
       },
     },
     {
-      type: DIVIDER,
-      info: {},
+      type: BUTTON,
+      info: {
+        name: "Waymaker",
+        color: "default",
+        data: { type: "NOTE_ON", channel: 0, note: "D2" },
+      },
     },
+    {
+      type: BUTTON,
+      info: {
+        name: "Альфа и Омега",
+        color: "default",
+        data: { type: "NOTE_ON", channel: 0, note: "D#2" },
+      },
+    },
+    {
+      type: BUTTON,
+      info: {
+        name: "Иисус люблю я",
+        color: "default",
+        data: { type: "NOTE_ON", channel: 0, note: "E2" },
+      },
+    },
+    {
+      type: BUTTON,
+      info: {
+        name: "СТОП",
+        color: "secondary",
+        data: { type: "NOTE_ON", channel: 0, note: "F2" },
+      },
+    },
+    // {
+    //   type: DIVIDER,
+    //   info: {},
+    // },
   ],
 };
 

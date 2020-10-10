@@ -30,8 +30,8 @@ import {
 } from "../../utils/CONST_events";
 
 function ThirdColumn(props) {
-  const [mins, setMins] = useState("00");
-  const [secs, setSecs] = useState("00");
+  const [mins, setMins] = useState("");
+  const [secs, setSecs] = useState("");
 
   const onMinsChange = (event) => {
     if (event.target.value < 121) {

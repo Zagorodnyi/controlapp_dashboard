@@ -15,7 +15,7 @@ import Fab from "@material-ui/core/Fab";
 function SecondColumn(props) {
   return (
     <div className={classes.containerItem + " " + classes.col2}>
-      <h1>Трансляция</h1>
+      <h1>Плейбеки</h1>
       {props.column2.map((element, index) => {
         return ElementGenerator[element.type](element.info, index);
       })}
