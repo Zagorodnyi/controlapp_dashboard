@@ -11,6 +11,7 @@ export const TIMER_DATA = "TIMER_DATA";
 export const CAPTURE = "CAPTURE";
 export const CAPTURE_STOP = "CAPTURE_STOP";
 export const CAPTURE_DATA = "CAPTURE_DATA";
+export const SETTINGS_CHANGED = "SETTINGS_CHANGED";
 
 //Midi Events
 export const NOTE_ON = "NOTE_ON";

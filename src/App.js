@@ -1,29 +1,25 @@
 import React, { Component } from "react";
-
 // redux
 import { connect } from "react-redux";
-
 // css modules
 import classes from "./assets/css/App.module.css";
-
 // @material-ui/core
 import Hidden from "@material-ui/core/Hidden";
-
 // Custom components
 import Navbar from "./components/Navbar/Navbar";
-import FirstColumn from "./components/Columns/FirstColumn";
-import SecondColumn from "./components/Columns/SecondColumn";
-import ThidrColumn from "./components/Columns/ThirdColumn";
+import Confidence from "./components/Columns/Confidence";
+import SettingsBlock from "./components/SettingsBlock/SettingsBlock";
+
 
 export class App extends Component {
+
   render() {
     return (
       <div className={classes.app}>
         <Navbar />
         <div className={classes.container}>
-          <FirstColumn />
-          <SecondColumn />
-          <ThidrColumn />
+          <SettingsBlock />
+          <Confidence />
         </div>
         <Hidden smDown>
           <div className={classes.wrap}>
@@ -39,6 +35,9 @@ export class App extends Component {
     );
   }
 }
+
+
+
 
 const mapStateToProps = (state) => ({});
 

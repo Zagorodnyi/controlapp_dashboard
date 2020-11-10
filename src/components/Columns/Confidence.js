@@ -1,6 +1,6 @@
 // React Imports
 import React, { useState } from "react";
-// Redux
+// Redux 
 import { connect } from "react-redux";
 import { changeLayout } from "../../redux/actions/timerActions";
 // Styles import
@@ -13,7 +13,7 @@ import {
   item2,
   time,
   dividerStatic,
-} from "../../assets/css/Column.module.css";
+} from "../../assets/css/Confidence.module.css";
 // @material-ui imports
 import TextField from "@material-ui/core/TextField";
 import Fab from "@material-ui/core/Fab";
@@ -53,7 +53,7 @@ function ThirdColumn(props) {
           <TextField
             className={time}
             size="small"
-            // type="number"
+            type="time"
             id="Minutes"
             label="Min"
             value={mins}
@@ -63,7 +63,7 @@ function ThirdColumn(props) {
           <TextField
             size="small"
             className={time}
-            // type="number"
+            type="time"
             id="Seconds"
             label="Sec"
             value={secs}
@@ -91,7 +91,9 @@ function ThirdColumn(props) {
           </Button>
         </div>
       </div>
+
       <hr className={dividerStatic} />
+
       <div className={row2}>
         <Button
           data={{

@@ -1,13 +1,5 @@
-import io from "socket.io-client";
-import { SUCCESS } from "../../utils/CONST_events";
+import socket from '../../utils/socket'
 
-const socket = io("fierce-sierra-99883.herokuapp.com/timer", {
-  transports: ["websocket"],
-});
-
-socket.on(SUCCESS, () => {
-  console.log("connected");
-});
 
 export const timerStop = (data) => (dispatch) => {
   socket.emit(data.type);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ElementGenerator from "../../classes/ElementGenerator";
 
 // redux
@@ -11,8 +11,12 @@ import classes from "../../assets/css/App.module.css";
 
 // @material-ui/core
 import Fab from "@material-ui/core/Fab";
+import AddDialog from "../AddDialog/AddDialog";
+
 
 function SecondColumn(props) {
+  const [dialogOpen, setDialogOpen] = useState(false);
+
   return (
     <div className={classes.containerItem + " " + classes.col2}>
       <h1>Плейбеки</h1>
@@ -25,10 +29,19 @@ function SecondColumn(props) {
         color="primary"
         aria-label="add"
         className={classes.fabAdd}
-        onClick={props.handleAddColumn}
+        onClick={() => {
+          setDialogOpen(true);
+        }}
       >
         <AddIcon />
       </Fab>
+      <AddDialog
+        open={dialogOpen}
+        handleClose={() => {
+          setDialogOpen(false);
+        }}
+        column="2"
+      />
     </div>
   );
 }
