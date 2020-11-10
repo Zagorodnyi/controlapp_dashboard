@@ -12,6 +12,7 @@ import { onButtonClickTimer } from "../../redux/actions/timerActions";
 
 // Button Component
 const CustumButton = (props) => {
+
   // Check wheater Button generated dynamicly or static
   return props.type === "COMMON" ? (
     // For Dynamic
@@ -31,7 +32,12 @@ const CustumButton = (props) => {
         variant="outlined"
         color={props.color}
         className={button}
-        onClick={props.onButtonClickTimer.bind(this, props.data)}
+        onClick={() => {
+          if (props.callback) {
+            props.callback()
+          }
+          props.onButtonClickTimer(props.data)
+        }}
       >
         {props.children}
       </Button>

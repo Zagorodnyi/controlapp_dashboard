@@ -53,7 +53,7 @@ function ThirdColumn(props) {
           <TextField
             className={time}
             size="small"
-            type="time"
+            // type="time"
             id="Minutes"
             label="Min"
             value={mins}
@@ -63,7 +63,7 @@ function ThirdColumn(props) {
           <TextField
             size="small"
             className={time}
-            type="time"
+            // type="time"
             id="Seconds"
             label="Sec"
             value={secs}
@@ -74,6 +74,10 @@ function ThirdColumn(props) {
         <div className={item2}>
           <Button
             color="primary"
+            callback={() => {
+              setMins('');
+              setSecs("")
+            }}
             data={{
               type: TIMER_START,
               minutes: mins,
